@@ -10,14 +10,16 @@
     <meta property="og:description" content="스마일푸드 야미, 함께하면 행복해지는 스마일푸드 야미">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/design.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
     <title>스마일푸드 야미</title>
 </head>
-<>
     <h1 class="notext">스마일푸드 야미</h1>
-    <div class="header">
+    <div id="header">
         <div class="header_top">
             <div class="logo">
                 <a href="#">
@@ -29,29 +31,68 @@
               <ul id="tnb">
                   <li><a href="#">로그인</a></li>
                   <li><a href="#">회원가입</a></li>
-                  <li><a href="#">장바구니</a></li>
-                  <li><a href="#">마이페이지</a></li>
+                  <li><a href="#" onclick="alert('로그인을 먼저 하세요');">장바구니</a></li>
+                  <li><a href="#" onclick="alert('로그인을 먼저 하세요');">마이페이지</a></li>
               </ul>  
             </div>
+      </div>
             <hr class="gubun">
             <div class="nav">
              <ul id="gnb">
-                 <li><a href="#">야미소개</a></li>
-                 <li><a href="#">생산공정</a></li>
-                 <li><a href="#">제품소개</a></li>
-                 <li><a href="#">고객센터</a></li>
+                <li><a href="#">야미소개</a>
+                <ul class="lnb">
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">사업분야</a></li>
+                    <li><a href="#">특허현황</a></li>
+                    <li><a href="#">파트너사</a></li>
+                    <li><a href="#">오시는길</a></li>
+                    </li>
+                </ul>
+                <li><a href="#">생산공정</a>
+                <ul class="lnb">
+                    <li><a href="#">냉동</a></li>
+                    <li><a href="#">신선식품</a></li>
+                    <li><a href="#">농산품</a></li>
+                </li>
+                </ul>
+                <li><a href="#">제품소개</a>
+                <ul class="lnb">
+                    <li><a href="#">곱창</a></li>
+                    <li><a href="#">찹스테이크</a></li>
+                    <li><a href="#">양고기</a></li>
+                </li>
+                </ul>
+                <li><a href="#">고객센터</a>
+                <ul class="lnb">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">질문답변</a></li>
+                    <li><a href="#">환불요청</a></li>
+                </li>
+                </ul>
              </ul>
             </div>
-        </div>
+    </div>
             <div id="slide">
-                <img src="images/visual.jpg" alt="스마일푸드 야미">
+                <div class="slogan">
+                    <h3>함께하면 행복해지는</h3>
+                    <h4>스마일푸드야미</h4>
+                </div>
+                    <div class="slider">
+                        <div><img src="images/slide1.jpg"></div>
+                        <div><img src="images/slide2.jpg"></div>
+                        <div><img src="images/slide3.jpg"></div>
+                      
             </div>
+        </div>
             <div id="icons">
-                <ul class=imgTtem>
-                    <li><a href="#"><img src="visual_icon1" alt="기업소개"></a></li>
-                    <li><a href="#"><img src="visual_icon2" alt=""></a></li>
-                    <li><a href="#"><img src="visual_icon3" alt=""></a></li>
-                    <li><a href="#"><img src="visual_icon4" alt=""></a></li>
+                <ul class=img_item>
+                    <li><a href="#"><img src="images/visual_icon1.jpg" alt="기업소개"></a></li>
+                    <li><a href="#"><img src="images/visual_icon2.jpg" alt="사업안내"></a></li>
+                    <li><a href="#"><img src="images/visual_icon3.jpg" alt="제품소개"></a></li>
+                    <li><a href="#"><img src="images/visual_icon4.jpg" alt="커뮤니티"></a></li>
+
                 </ul> 
             </div>
             <div id="main">
@@ -91,5 +132,14 @@
                 <div class="copyright">
                     copyright&copy; 2020. <strong>smile food yami</strong> all right reserved
             </div>
+            <script>
+                $(document).ready(function(){
+                  $('.slider').bxSlider({
+                      auto:true,
+                      pause:2000,
+                      pager:false
+                  });
+                });
+              </script>
         </body>
         </html>
