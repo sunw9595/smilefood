@@ -90,7 +90,7 @@ a {
 
 /* ======================slide====================*/
 #slide {
-    height: 200px;
+    height: 400px;
     overflow: hidden;
     position: relative;
 }
@@ -100,11 +100,22 @@ a {
     color:#fff;
     text-shadow: 0 0 5px #333;
     left:50%;
-    top:100px;
-    transform: translateX(-50%);
+    top:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.slogan h3 {
+    font-size:2.2rem;
+}
+.slogan h4 {
+    font-size:3rem;
+    font-weight: 900;
 }
 .bx-wrapper {
     border:0;
+}
+.slider img {
+    height:400px;
 }
 #icons {
     background: #d60c00;
