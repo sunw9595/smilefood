@@ -1,3 +1,68 @@
 @media screen and (max-width:425px) {
+    .logo {
+        float:none;
+        text-align: center;
+    }
+    .user {
+        display:none;
+    }
+    #burger {
+        display: block;
+        top:20px;
+    }
+#gnb li {
+    margin:0;
+    padding:0;
+    width: 25%;
+    text-align: center;
+}
+#slide {
+    height: 200px;
+}
+.bx-wrapper {
+    height:200px;
+}
+.slider img {
+    height:200px;
+}
+.slogan h3{
+    font-size:1.1rem;
+}
+.slogan h4 {
+    font-size:1.5rem;
+    font-weight:400;
+}
+.img_item {
+    width:100%;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    flex:1 1 auto;
+}
+.img_item li {
+    width:50%;
+}
+.img_item img {
+    width:100%;
+}
+#main ul{
+    display:flex;
+    justify-content:space-around;
+    flex:1 1 auto;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+#main ul li {
+    float:none;
+    width:calc(100% / 3 );
+    border-radius:1;
+    height: auto;
+}
+#main ul li img {
+    width:100%;
+}
+#main ul li:nth-child(2){
+    margin:0;
+}
+
 
 }
